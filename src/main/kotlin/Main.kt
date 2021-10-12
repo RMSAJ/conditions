@@ -1,34 +1,39 @@
 
 
 fun main(args: Array<String>) {
-    var years = readLine()!!
-    var year400 = years.toInt()%400// the reminder of years when devided by 400
-    var year100 = years.toInt()%100 // the reminder of years when devided by 100
-    var year4 = years.toInt() % 4 // the reminder of years when devided by 4
-    if( years < 1582.toString()){
-        if( year4 == 0 ){
-            println("it's a leap year")
-        }
-        else {
-            println("its normal year")
-        }
+    println(" welcome to Rakan calcolator ")
+    println(" pls write your inter calc operations")
+
+    var firstNumber = readLine()!!
+    println(" pls use only (+, -, *, /,%)")
+   var operation = readLine()
+    println("pls write ur second number")
+    var secondNumber = readLine()!!
+
+    if( operation == "+"){
+        println(firstNumber.toInt() + secondNumber.toInt())
     }
-    else if ( years >= 1582.toString()){
-        if( year400 == 0){
-            println("Leap Year")
-        }
-        else if ( year100 == 0){
-            println("normal year")
-        }
-        else if ( year4 == 0){
-            println(" leap year")
-        }
-        else {
-            println("normal year")
-        }
+    else if (operation == "-"){
+       println( firstNumber.toInt() - secondNumber.toInt())
+
+
 
     }
+    else if ( operation == "/"){
+        println(firstNumber.toInt() / secondNumber.toInt() )
+    }
+    else if ( operation == " *"){
+        println(firstNumber.toInt() * secondNumber.toInt())
+    }
+    else if( operation == "%"){
+        println(firstNumber.toInt() % secondNumber.toInt())
+    }
+    else{
+        println("null")
+    }
+
+    }
+
 
     // Try adding program arguments at Run/Debug configuration
     //  println("Program arguments: ${args.joinToString()}")
-}
