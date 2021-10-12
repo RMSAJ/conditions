@@ -1,11 +1,25 @@
 
 
 fun main(args: Array<String>) {
-    var appleNo = readLine()!!
-    var dozens = appleNo.toInt()/12 // number of dozes we have
-    var remainApple = appleNo.toInt() % 12 // the remider of the apples
-    println("number of dozens = "+ dozens)
-    println("apples remain = " + remainApple)
-    // Try adding program arguments at Run/Debug configuration
-    //  println("Program arguments: ${args.joinToString()}")
+    println("Write your name")
+    var playerName = readLine()
+    println(" are u sure that ur name?  yes or no ")
+      var answer =  readLine()
+        while(answer  ==   "no" ){
+            println("then get out")
+            break
+        }
+
+
+    var playerHeathPoint = 100
+    if(playerHeathPoint == 100){
+        println("Full")
+    }
+    else if(playerHeathPoint < 50){
+        println("Run!!!")
+    }
+    else {
+        println("Heal!")
+    }
+
 }
