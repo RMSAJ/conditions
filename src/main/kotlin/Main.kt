@@ -8,4 +8,5 @@ fun main(args: Array<String>) {
     println("apples remain = " + remainApple)
     // Try adding program arguments at Run/Debug configuration
     //  println("Program arguments: ${args.joinToString()}")
+    //hello
 }
